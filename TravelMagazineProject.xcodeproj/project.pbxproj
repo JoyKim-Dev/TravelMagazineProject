@@ -14,6 +14,13 @@
 		35246FEE2C02340100B46B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35246FED2C02340100B46B11 /* Assets.xcassets */; };
 		35246FF12C02340100B46B11 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 35246FF02C02340100B46B11 /* Base */; };
 		35246FFA2C02358B00B46B11 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 35246FF92C02358B00B46B11 /* Kingfisher */; };
+		352DD0702C03801A00069A18 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352DD06F2C03801A00069A18 /* RestaurantViewController.swift */; };
+		352DD0722C0382C400069A18 /* TravelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352DD0712C0382C400069A18 /* TravelViewController.swift */; };
+		354F61CE2C03866D00F02599 /* TravelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354F61CD2C03866D00F02599 /* TravelTableViewCell.swift */; };
+		354F61D02C03867800F02599 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354F61CF2C03867800F02599 /* RestaurantTableViewCell.swift */; };
+		35DA7DAE2C035BF000882DB0 /* TravelMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35DA7DAD2C035BF000882DB0 /* TravelMain.storyboard */; };
+		35DA7DB22C035C2000882DB0 /* TravelMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DA7DB12C035C2000882DB0 /* TravelMainViewController.swift */; };
+		35DA7DB72C0365BE00882DB0 /* Tabman in Frameworks */ = {isa = PBXBuildFile; productRef = 35DA7DB62C0365BE00882DB0 /* Tabman */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +32,12 @@
 		35246FED2C02340100B46B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35246FF02C02340100B46B11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35246FF22C02340100B46B11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		352DD06F2C03801A00069A18 /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
+		352DD0712C0382C400069A18 /* TravelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelViewController.swift; sourceTree = "<group>"; };
+		354F61CD2C03866D00F02599 /* TravelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTableViewCell.swift; sourceTree = "<group>"; };
+		354F61CF2C03867800F02599 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		35DA7DAD2C035BF000882DB0 /* TravelMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TravelMain.storyboard; sourceTree = "<group>"; };
+		35DA7DB12C035C2000882DB0 /* TravelMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelMainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +46,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35246FFA2C02358B00B46B11 /* Kingfisher in Frameworks */,
+				35DA7DB72C0365BE00882DB0 /* Tabman in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +72,7 @@
 		35246FE32C02340000B46B11 /* TravelMagazineProject */ = {
 			isa = PBXGroup;
 			children = (
+				35DA7DAB2C035BBC00882DB0 /* TravelMain */,
 				35246FE42C02340000B46B11 /* AppDelegate.swift */,
 				35246FE62C02340000B46B11 /* SceneDelegate.swift */,
 				35246FE82C02340000B46B11 /* ViewController.swift */,
@@ -67,6 +82,19 @@
 				35246FF22C02340100B46B11 /* Info.plist */,
 			);
 			path = TravelMagazineProject;
+			sourceTree = "<group>";
+		};
+		35DA7DAB2C035BBC00882DB0 /* TravelMain */ = {
+			isa = PBXGroup;
+			children = (
+				35DA7DB12C035C2000882DB0 /* TravelMainViewController.swift */,
+				352DD0712C0382C400069A18 /* TravelViewController.swift */,
+				352DD06F2C03801A00069A18 /* RestaurantViewController.swift */,
+				35DA7DAD2C035BF000882DB0 /* TravelMain.storyboard */,
+				354F61CD2C03866D00F02599 /* TravelTableViewCell.swift */,
+				354F61CF2C03867800F02599 /* RestaurantTableViewCell.swift */,
+			);
+			path = TravelMain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +115,7 @@
 			name = TravelMagazineProject;
 			packageProductDependencies = (
 				35246FF92C02358B00B46B11 /* Kingfisher */,
+				35DA7DB62C0365BE00882DB0 /* Tabman */,
 			);
 			productName = TravelMagazineProject;
 			productReference = 35246FE12C02340000B46B11 /* TravelMagazineProject.app */;
@@ -118,6 +147,7 @@
 			mainGroup = 35246FD82C02340000B46B11;
 			packageReferences = (
 				35246FF82C02358B00B46B11 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				35DA7DB52C0365BE00882DB0 /* XCRemoteSwiftPackageReference "Tabman" */,
 			);
 			productRefGroup = 35246FE22C02340000B46B11 /* Products */;
 			projectDirPath = "";
@@ -136,6 +166,7 @@
 				35246FEE2C02340100B46B11 /* Assets.xcassets in Resources */,
 				35246FF12C02340100B46B11 /* Base in Resources */,
 				35246FEC2C02340000B46B11 /* Base in Resources */,
+				35DA7DAE2C035BF000882DB0 /* TravelMain.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,9 +177,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				352DD0722C0382C400069A18 /* TravelViewController.swift in Sources */,
 				35246FE92C02340000B46B11 /* ViewController.swift in Sources */,
+				354F61CE2C03866D00F02599 /* TravelTableViewCell.swift in Sources */,
+				352DD0702C03801A00069A18 /* RestaurantViewController.swift in Sources */,
+				354F61D02C03867800F02599 /* RestaurantTableViewCell.swift in Sources */,
 				35246FE52C02340000B46B11 /* AppDelegate.swift in Sources */,
 				35246FE72C02340000B46B11 /* SceneDelegate.swift in Sources */,
+				35DA7DB22C035C2000882DB0 /* TravelMainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +427,14 @@
 				minimumVersion = 7.11.0;
 			};
 		};
+		35DA7DB52C0365BE00882DB0 /* XCRemoteSwiftPackageReference "Tabman" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uias/Tabman.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -398,6 +442,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 35246FF82C02358B00B46B11 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		35DA7DB62C0365BE00882DB0 /* Tabman */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35DA7DB52C0365BE00882DB0 /* XCRemoteSwiftPackageReference "Tabman" */;
+			productName = Tabman;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
